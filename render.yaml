@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: sprint-challenge
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
